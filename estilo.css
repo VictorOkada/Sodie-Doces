@@ -1,0 +1,420 @@
+/*CORPO DO SITE*/
+body{
+    margin: 0;
+    background-color: #ffd9a4;
+}
+/*CABEÇALHO DO SITE*/
+#header{
+    
+    width:100%;
+    height: 150px;
+    margin-top: 30px;
+    
+}
+/*LOGO DO SITE*/
+#logo{
+    position: relative;
+    left: 50%;
+    margin-left: -150px;
+    width: 305px;
+    background-color: #ffd9a4;
+
+}
+/*MENU PRINCIPAL DO SITE*/
+#menu {
+
+    width: 100%;
+    background-color: #604333;
+    font-family: gabriola;
+    font-size:20px;
+}
+
+#menuAtual:link,
+#menuAtual:visited {
+
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+.listaMenu {
+    
+    width: 700px;
+    position: relative;
+    left: 50%;
+    margin-left: -320px;
+    margin-top: -20px;
+}
+.listaMenu li {
+
+    display: inline-block;
+}
+.listaMenu li a {
+
+    text-decoration: none;
+    height: 50px;
+    line-height: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.listaMenu li a:link,
+.listaMenu li a:visited {
+
+    color: #ffd9a4;
+}
+.listaMenu li a:hover {
+
+    color: #ffd9a4;
+    background-color:#604333;
+}
+/*SUBMENU DO SITE*/
+#menu2 {
+
+    width: 100%;
+    background-color: #604333;
+    font-family: gabriola;
+    font-size:20px;
+}
+.listaMenu2 {
+    
+    width: 700px;
+    position: relative;
+    left: 50%;
+    margin-left: -300px;
+    margin-top: 7px;
+}
+.listaMenu2 li {
+
+    display: inline-block;
+}
+
+.listaMenu2 li a {
+
+    text-decoration: none;
+    height: 50px;
+    line-height: 30px;
+    padding-left: 135px;
+    padding-right: 25px;
+}
+.listaMenu2 li a:link,
+.listaMenu2 li a:visited {
+
+    color: #ffd9a4;
+}
+.listaMenu2 li a:hover {
+
+    color: #ffd9a4;
+    background-color:#604333;
+}
+/*DIVS CORRESPONDENTES A PÁGINA DE BOLOS.HTML E BALAS.HTML (PROPAGANDA EM DESTAQUE)*/
+#propaganda{
+    position: relative;
+    width: 1280px;
+    height: 600px;
+    left: 50%;
+    margin-left: -640px;
+}
+#areaBolo{
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    background-color: #ffffff;
+    
+}
+/*DIVS CORRESPONDENTES AO INDEX.HTML DE BOLOS POPULARES*/
+#areaMaisVendidos table {
+    width: 100%;
+    position: relative;  
+    border-spacing: 25px;
+    border-collapse: separate;
+    text-align: center;
+}
+#areaMaisVendidos td {    
+
+    width: 250px;
+    color: #604333;
+    font-size: 20px;
+}
+#areaMaisVendidos td img {
+
+    width: 300px;
+    height: 210px;
+    border:2px solid#a57b52;
+    margin-top: 5px;
+}
+.retangulo{
+
+    width: 75%;
+    height: 50px;
+    margin-left: 50px;
+    background-color:#ffd9a8;
+}
+/*DIVS CORRESPONDENTES À PÁGINA BALAS.HTML*/
+  #areaMaisVendidos2 table {
+    width: 100%;
+    position: relative;
+    border-spacing: 25px;
+    border-collapse: separate;
+    text-align: center;
+}
+#areaMaisVendidos2 td {    
+
+    width: 20px;                          
+    color: #604333;
+    font-size: 20px;
+}
+#areaMaisVendidos2 td img {
+
+    width: 250px;
+    height: 180px;
+    border:2px solid#a57b52;
+    margin-top: 5px;
+}
+.retangulo2{
+
+    width: 100%;
+    height: 50px;
+}
+/* CARROSSEL DE PROPAGANDAS DA PÁGINA INDEX.HTML E SALGADOS.HTML*/
+@keyframes carousel{
+    0%    { left:0; }
+    11%   { left:0; }
+    12.5% { left:-100%; }
+    23.5% { left:-100%; }
+    25%   { left:-200%; }
+    36%   { left:-200%; }
+    37.5% { left:-300%; }
+    48.5% { left:-300%; }
+    50%   { left:-400%; }
+    61%   { left:-400%; }
+    62.5% { left:-300%; }
+    73.5% { left:-300%; }
+    75%   { left:-200%; }
+    86%   { left:-200%; }
+    87.5% { left:-100%; }
+    98.5% { left:-100%; }
+    100%  { left:0; }
+}
+@keyframes go{
+    0%    {  }
+    100%    { left:-300%; }
+}
+@keyframes back{
+    0%    { left:0; }
+    100%  { left:100%; }
+}
+.carousel{
+    width:100%; 
+    overflow:hidden; 
+    height:100%;}
+.paineis{
+    width:500%; 
+    overflow:hidden;  
+    height:100%;  
+    animation:carousel 30s infinite; position:relative;}
+article{
+    float:left; 
+    width:20%;} 
+img{
+    height:100%; 
+    width:100%}
+input[type=checkbox]:checked ~ .paineis{animation-play-state:paused; animation: go 10s}
+
+/* DIVS CORRESPONDENTES AO RODAPÉ DO SITE*/
+#redesSociais{
+    position: relative;
+    width: 200px;
+    height: 43px;
+    left: 50%;
+    margin-left: -100px;
+    margin-top: 100px;
+    margin-bottom: 200px;
+   
+   
+}
+#parcerias{
+
+    position: relative;
+    width: 50px;
+    height: 50px;
+    left: 50%;
+    margin-left: -100px;
+    margin-top: 50px;
+    
+}
+#parcerias2{
+
+    position: relative;
+    width: 50px;
+    height: 50px;
+    left: 50%;
+    margin-left: 0px;
+    margin-top: -50px;
+ 
+}
+#parcerias3{
+
+    position: relative;
+    width: 50px;
+    height: 50px;
+    left: 50%;
+    margin-left: 100px;
+    margin-top: -50px;
+    
+}
+/*DIVS CORRESPONDENTES À PÁGINA A-SODIE.HTML*/
+#parentBox{
+    position: relative;
+    width: 1000px;
+    height: 1400px;
+    left:50%;
+    margin-left: -500px;
+    background-color: white;
+    margin-top: 50px;
+    border: 1px solid #ffd9a8;
+}
+#caixaTexto{
+    position: relative;
+    width: 400px;
+    height: 700px;
+    left: 50%;
+    margin-left: -450px;
+    margin-top: 100px;
+}
+#foto{
+    position: relative;
+    width: 477px;
+    height: 571px;
+    left:50%;
+    margin-left: 0px;
+    margin-top: -700px;
+}
+#foto2{
+    position: relative;
+    width: 400px;
+    left: 50%;
+    margin-left: -450px;
+    margin-top: 200px;
+  
+}
+#caixaTexto2{
+    position: relative;
+    width: 477px;
+    height: 300px;
+    left:50%;
+    margin-left: 0px;
+    margin-top: -420px;
+
+}
+/* DIVS CORRESPONDENTES À PÁGINA DE BOLOS.HTML*/
+#video_principal{
+    position: relative;
+    width: 1200px;
+    height: 650px;
+    left:50%;
+    margin-left: -600px;
+    margin-top: 2000px;
+    border: 1px solid black;
+    background-color: #442819;
+    
+}
+#sodieTV{
+    position: relative;
+    width:200px;
+    height:94px;
+    margin-left: 200px;
+    margin-top: 100px;
+    
+}
+#comunication{
+    position: relative;
+    width: 700px;
+    height: 140px;
+    margin-left: 450px;
+    margin-top: -120px;
+}
+.enunciado{
+
+     width: 600px;
+     height: 350px;
+     
+}
+.enunciado2{
+
+    width: 600px;
+    height: 350px;
+    margin-left: 600px;
+    margin-top: -353px;
+    
+  
+    
+}
+#destaqueBolo{
+    position: relative;
+    width: 1280px;
+    height: 600px;
+    left:50%;
+    margin-left: -640px;
+    border: 1px solid black;
+}
+#video_principal .seta {
+    width: 10%;
+    height: 10%;
+    background: url(Images/seta_amb.png) left center no-repeat;
+    position: absolute;
+    z-index: 2;
+    top: 120px;
+    bottom: 0;
+   
+}
+.play {
+    background: url(Images/play.png) left center no-repeat;
+    width: 10%;
+    height: 12%;
+    position: absolute;
+    z-index: 2;
+    top: 120px;
+    bottom: 0;
+    right: 50%;
+    margin-right: -400px;
+  
+}
+/*DIVS CORRESPONDENTES À PÁGINA CONTATOS.HTML*/
+#contatos{
+
+    position: relative;
+    width: 1200px;
+    height: 450px;
+    left:50%;
+    margin-left: -600px;
+    margin-top: 100px;
+}
+#tituloPergunta{
+    width: 600px;
+    height: 150px;
+    background-color: #F9AA3C;
+}
+#perguntas{
+    width: 600px;
+    height: 300px;
+ 
+}
+#respostas{
+
+    width: 600px;
+    height: 454px;
+    margin-left: 600px;
+    margin-top: -473px;
+    background-color: #4A2F21;
+}
+
+ #maisInformacoes{
+
+    position: relative;
+    width: 1200px;
+    height: 600px;
+    left:50%;
+    margin-left: -600px;
+    margin-top: 150px;
+    background-color: #ffffff;
+}
+

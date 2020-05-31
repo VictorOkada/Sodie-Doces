@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">    
+    <title>Sodie</title>
+    <link href="estilo.css" type="text/css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!--BOTÕES DE ESCOLHA DO MENU PERGUNTAS SODIÊ -->
+    <style>
+  .dropbtn {
+    background-color: #f9aa3c;
+    color: #ffffff;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-left: 100px;
+    width: 60%;
+   
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+      background-color: #4A2F21;
+  }
+  
+  .dropdown {
+    position: relative;
+    left: 50%;
+    margin-left: -400px;
+  
+  
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: relative;
+    left: 50%;
+    margin-left: -300px;
+    min-width: 0px;
+    overflow: left;
+    width: 600px;
+    height: 454px;
+    margin-top: -200px;
+    background-color: #4A2F21;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ffffff;}
+  
+  .show {display: block;}
+</style>
+
+<style>
+
+	.lista{ margin: 10px }
+
+	.lista img{ display: block; margin: 5px 0px }
+
+	.lista li{
+		margin: 0px;
+		display: inline-block;
+		padding: 10px;
+	}
+
+	.pesquisa{
+		padding: 10px;
+    margin: 10px;
+    margin-left: 7%;
+    width: 70%;
+  }
+  .pesquisa2{
+		padding: 10px;
+    margin: 10px;
+    margin-left: 10%;
+    width: 40%;
+    height: 250px;
+  }
+  .pesquisa3{
+		padding: 10px;
+    margin: 10px;
+    margin-left: 40%;
+    width: 10%;
+  }
+  #h-100-p{width:50%;top:68px;margin-left:50px;position: relative;}
+  .h-100-p2{width:100%;height:100%;margin-left: 500px;margin-top: -225px;}
+  .h-100-p3{width:100%;height:100%;margin-left: 500px;margin-top: -300px;}
+
+</style>
+<meta name="viewport" content="width=device-width, user-scalable=no">
+</head>
+<body>
+
+    <div id="header">
+        <div id="logo"><a id ="menuAtual" href="index.html"><img src="Images/sodie.png"></a></div>
+    </div>
+    <div id="menu">
+        <ul class="listaMenu">
+            <li><a href="bolos.html">BOLOS</a></li>
+            <li><a href="salgados.html">SALGADOS</a></li>
+            <li><a href="balas.html">BALAS</a></li>
+            <li><a href="a-sodie.html">SODIÊ DOCES</a></li>
+            <li><a href="contatos.html">CONTATO</a></li>
+        </ul>
+    </div>
+
+
+    <div id="contatos">
+        <div id="tituloPergunta">
+          <h1 style="font-family:gabriola;font-size: 35px;text-align: center;padding-top: 30px;">PERGUNTAS FREQUENTES</h1>
+        </div>
+       <div id="perguntas">
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Posso ter uma franquia Sodiê?</button>
+        </div>
+        <div class="dropdown">
+            <button onclick="myFunction2()" class="dropbtn">Quais são os horários de funcionamento?</button>
+        </div>
+            <div class="dropdown">
+            <button onclick="myFunction3()" class="dropbtn">Posso trabalhar com vocês?</button>
+        </div>
+            <div class="dropdown">
+            <button onclick="myFunction4()" class="dropbtn">Qual a faixa de preços?</button>
+        </div>
+            <div class="dropdown">
+            <button onclick="myFunction5()" class="dropbtn">A Sodiê faz bolos personalizados?</button>
+        </div>
+        <div class="dropdown">
+          <button onclick="myFunction6()" class="dropbtn">Vocês vendem doces, salgados ou outros produtos?</button>
+      </div>
+    </div>
+       <div id="respostas">
+
+        <h1 style="font-family:gabriola;font-size: 35px;text-align: center;padding-top: 30px;">POSSO TER UMA FRANQUIA SODIÊ?</h1>
+        <p style="font-family:gabriola;font-size: 20px;text-align:center">Para informações sobre franquias você pode entrar em contato com o setor de expansão de rede pelo e-mail suafranquia@sodiedoces.com.br</p>
+           
+    <div id="myDropdown" class="dropdown-content">
+      <h1 style="font-family:gabriola;font-size: 35px;text-align: center;padding-top: 30px;">POSSO TER UMA FRANQUIA SODIÊ?</h1>
+      <p style="font-family:gabriola;font-size: 20px;text-align:center">Para informações sobre franquias você pode entrar em contato com o setor de expansão de rede pelo e-mail suafranquia@sodiedoces.com.br</p>
+    </div>
+    <div id="myDropdown2" class="dropdown-content">
+      <h1 style="font-family:gabriola;font-size: 35px;text-align: center;padding-top: 30px;">QUAIS SÃO OS HORÁRIOS DE FUNCIONAMENTO?</h1>
+      <p style="font-family:gabriola;font-size: 20px;text-align:center">Como cada unidade possui seu próprio horário de funcionamento, te orientamos a entrar em contato diretamente com uma delas para saber sobre o funcionamento em finais de semana e feriados.</p>
+        </div>
+        <div id="myDropdown3" class="dropdown-content">
+          <h1 style="font-family:gabriola;font-size: 35px;text-align: center;padding-top: 30px;">POSSO TRABALHAR COM VOCÊS?</h1>
+          <p style="font-family:gabriola;font-size: 20px;text-align:center">Para saber sobre vagas, você precisa entrar em contato diretamente com as unidades da sua cidade! Você também pode encaminhar seu currículo para o e-mail consultoria7@sodiedoces.com.br</p>
+            </div>
+            <div id="myDropdown4" class="dropdown-content">
+              <h1 style="font-family:gabriola;font-size: 35px;text-align: center;padding-top: 30px;">QUAL A FAIXA DE PREÇOS?</h1>
+              <p style="font-family:gabriola;font-size: 20px;text-align:center">Como o valor dos bolos varia de acordo com a unidade, você pode entrar em contato com uma delas e será informada de tudo corretamente.</p>
+                </div>
+                <div id="myDropdown5" class="dropdown-content">
+                  <h1 style="font-family:gabriola;font-size: 35px;text-align: center;padding-top: 30px;">A SODIÊ FAZ BOLOS PERSONALIZADOS?</h1>
+                  <p style="font-family:gabriola;font-size: 20px;text-align:center">Para informações sobre bolos personalizados você precisa entrar em contato com uma das unidades.</p>
+                    </div>
+                    <div id="myDropdown6" class="dropdown-content">
+                      <h1 style="font-family:gabriola;font-size: 35px;text-align: center;padding-top: 30px;">VOCÊS VENDEM DOCES, SALGADOS OU OUTROS PRODUTOS?</h1>
+                      <p style="font-family:gabriola;font-size: 20px;text-align:center">Para informações sobre outros produtos você precisa entrar em contato diretamente com uma das unidades.</p>
+                      </div>
+    <script>
+
+    /* When the user clicks on the button, 
+  toggle between hiding and showing the dropdown content */
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  /* When the user clicks on the button, 
+  toggle between hiding and showing the dropdown content */
+  function myFunction2() {
+    document.getElementById("myDropdown2").classList.toggle("show");
+  }
+  /* When the user clicks on the button, 
+  toggle between hiding and showing the dropdown content */
+  function myFunction3() {
+    document.getElementById("myDropdown3").classList.toggle("show");
+  }
+  /* When the user clicks on the button, 
+  toggle between hiding and showing the dropdown content */
+  function myFunction4() {
+    document.getElementById("myDropdown4").classList.toggle("show");
+  }
+  /* When the user clicks on the button, 
+  toggle between hiding and showing the dropdown content */
+  function myFunction5() {
+    document.getElementById("myDropdown5").classList.toggle("show");
+  }
+    /* When the user clicks on the button, 
+  toggle between hiding and showing the dropdown content */
+  function myFunction6() {
+    document.getElementById("myDropdown5").classList.toggle("show");
+  }
+
+      window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+  </script>
+       </div>
+    </div>
+    <div id="maisInformacoes">
+      <h1 style="font-family: gabriola;font-size: 42px;text-align: center;padding-top: 60px;">QUER FALAR COM A GENTE? DEIXE SUA MENSAGEM.</h1>
+      <div id="h-100-p">
+        <input class="pesquisa" placeholder="SAC"><br>
+        <input class="pesquisa" placeholder="Nome"><br>
+        <input class="pesquisa" placeholder="E-mail"><br>
+        <input class="pesquisa" placeholder="Telefone"><br>
+        <input class="pesquisa" placeholder="Cidade">
+      </div>
+      <div class="h-100-p2">
+        <input class="pesquisa2" placeholder="Mensagem"><br>
+      </div>
+      <div class="h-100-p3">
+        <input class="pesquisa3" placeholder="ENVIAR">
+      </div>
+    </div>
+      
+      <script>
+        pesquisa_input = document.querySelectorAll(".pesquisa");
+      
+      for(i in pesquisa_input){
+        
+          pesquisa_input[i].onkeyup=function(e){
+      
+            reg = new RegExp(this.value.toLowerCase(),"g")
+            lis = this.parentElement.querySelector(".lista")
+      
+            console.log(lis)
+      
+            for(j of lis.children){
+              if( !j.getAttribute("nome").match(reg) )
+                j.style.display="none"
+              else
+                j.removeAttribute("style")
+            }
+          }
+      }
+      </script>
+
+<div id="redesSociais">
+  <a href="https://www.facebook.com/sodiedocesoficial"><img src="Images/redes.png"></a>
+</div>
+<div style="width: 50px;height: 50px;left: 50%;margin-left: -500px;position: relative;">
+  <img src="Images/selo_abf_2019.png">
+</div>
+<div style="width: 300px;height: 100px;left: 50%;margin-left: -420px;margin-top:-60px;position: relative;">
+<p>Iniciativa da ABF para incentivar as boas práticas do franchising.</p>
+</div>
+<div style="width: 50px;height: 50px;left: 50%;margin-left: 400px;margin-top:-100px;position: relative;">
+<img src="Images/selo_nestle.png">
+</div>

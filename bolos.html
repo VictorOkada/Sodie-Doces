@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">    
+    <title>Sodie</title>
+    <link href="estilo.css" type="text/css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--BOTÕES DE ESCOLHA DO MENU DE BOLOS " NOSSOS BOLOS" -->
+<style>
+.dropbtn {
+  background-color: #f9aa3c;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #ffd9a4;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  margin-left: -250px;
+  margin-top: 100px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffd9a4;
+  left: 50%;
+  margin-left: -500px;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+</style>
+
+<meta name="viewport" content="width=device-width, user-scalable=no">
+</head>
+
+<body>
+  <div id="header">
+    <div id="logo"><a id ="menuAtual" href="index.html"><img src="Images/sodie.png"></a></div>
+</div>
+<div id="menu">
+  <ul class="listaMenu">
+      <li><a href="bolos.html">BOLOS</a></li>
+      <li><a href="salgados.html">SALGADOS</a></li>
+      <li><a href="balas.html">BALAS</a></li>
+      <li><a href="a-sodie.html">SODIÊ DOCES</a></li>
+      <li><a href="contatos.html">CONTATO</a></li>
+  </ul>
+</div>
+<div id="destaqueBolo">
+  <img src="Images/slides/slide1.png">
+</div>
+<h1 style="font-family:gabriola;font-size:42px;text-align:center;padding-top:100px;">Nossos Bolos</h1>
+<div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">Caseiro</button>
+    <button onclick="myFunction2()" class="dropbtn">Zero Açucar</button>
+    <button onclick="myFunction3()" class="dropbtn">Bolos Brancos</button>
+    <button onclick="myFunction4()" class="dropbtn">Bolos de Chocolate</button>
+  
+ <div id="myDropdown" class="dropdown-content">
+    <div id="areaMaisVendidos">
+        <table>
+            <tr>
+                <td>
+                    <img src="Images/Caseiros/abacaxi.png">
+                    <div class="retangulo">
+                      <p style="font-family: gabriola;font-size: 25px;text-transform: uppercase;">abacaxi</p>
+                  </div>
+                </td>
+                <td>
+                  <img src="Images/Caseiros/banana.png">
+                  <div class="retangulo">
+                    <p style="font-family: gabriola;font-size: 25px;text-transform: uppercase;">banana</p>
+              </div>
+              </td>
+              <td>
+                  <img src="Images/Caseiros/cenoura.png">
+                  <div class="retangulo">
+                    <p style="font-family: gabriola;font-size: 25px;text-transform: uppercase;">cenoura</p>
+              </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                  <img src="Images/Caseiros/chocolate.png">
+                  <div class="retangulo">
+                    <p style="font-family: gabriola;font-size: 25px;text-transform: uppercase;">chocolate</p>
+              </div>
+              </td>
+              <td>
+                <img src="Images/Caseiros/formigueiro.png">
+                <div class="retangulo">
+                  <p style="font-family: gabriola;font-size: 25px;text-transform: uppercase;">formigueiro</p>
+              </div>
+            </td>
+            <td>
+                <img src="Images/Caseiros/fubá com erva doce.png">
+                <div class="retangulo">
+                  <p style="font-family: gabriola;font-size: 25px;text-transform: uppercase;">fubá com erva doce</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+                <img src="Images/Caseiros/maracujá.png">
+                <div class="retangulo">
+                  <p style="font-family: gabriola;font-size: 25px;text-transform: uppercase;">maracujá</p>
+            </div>
+            </td>
+            <td>
+              <img src="Images/Caseiros/fubá com goiabada.png">
+              <div class="retangulo">
+                <p style="font-family: gabriola;font-size: 25px;text-transform: uppercase;">fubá com goiabada</p>
+          </td>
+          <td>
+            <img src="Images/Caseiros/fubá.png">
+            <div class="retangulo">
+              <p style="font-family: gabriola;font-size: 25px;text-transform: uppercase;">fubá</p>
+        </div>
+        </td>
+      </tr>
+        <tr>
+          <td>
+          <img src="Images/Caseiros/laranja.png">
+          <div class="retangulo">
+            <p style="font-family: gabriola;font-size: 25px;text-transform: uppercase;">laranja</p>
+      </td>
+      <td>
+        <img src="Images/Caseiros/limão.png">
+        <div class="retangulo">
+          <p style="font-family: gabriola;font-size: 25px;text-transform: uppercase;">limão</p>
+    </td>
+    <td>
+      <img src="Images/Caseiros/milho.png">
+      <div class="retangulo">
+        <p style="font-family: gabriola;font-size: 25px;text-transform: uppercase;">milho</p>
+  </div>
+  </td>
+    </tr>
+    <tr>
+  <td>
+    <img src="Images/Caseiros/toalha felpuda.png">
+    <div class="retangulo">
+      <p style="font-family: gabriola;font-size: 25px;text-transform: uppercase;">toalha felpuda</p>
+</td>
+<td>
+  <img src="Images/Caseiros/vulcão de leite ninho com goiabada.png">
+  <div class="retangulo">
+    <p style="font-family: gabriola;font-size: 25px;text-transform: uppercase;">vulcão de leite ninho com goiabada</p>
+</div>
+</td>
+        </tr>
+       </table>
+      </div>
+  </div>
+</div>
+
+
+<div id="myDropdown2" class="dropdown-content">
+  <div id="areaMaisVendidos">
+      <table>
+          <tr>
+              <td>
+                  <img src="Images/Zero acucar/trufas brancas com nozes e damasco zero açúcar.png">
+                  <div class="retangulo">
+                    <p style="font-family: gabriola;font-size: 25px;text-transform: uppercase;">trufas brancas com nozes e damasco</p>
+                </div>
+              </td>
+              <td>
+                <img src="Images/Zero acucar/trufado preto e branco zero açúcar.png">
+                <div class="retangulo">
+                  <p style="font-family: gabriola;font-size: 25px;text-transform: uppercase;">trufado preto e branco</p>
+            </div>
+            </td>
+            <td>
+                <img src="Images/Zero acucar/trufado com damasco zero açúcar.png">
+                <div class="retangulo">
+                  <p style="font-family: gabriola;font-size: 25px;text-transform: uppercase;">trufado com damasco</p>
+            </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+                <img src="Images/Zero acucar/salada de frutas zero açúcar.png">
+                <div class="retangulo">
+                  <p style="font-family: gabriola;font-size: 25px;text-transform: uppercase;">salada de frutas</p>
+            </div>
+            </td>
+            <td>
+              <img src="Images/Zero acucar/maracujá zero açúcar.png">
+              <div class="retangulo">
+                <p style="font-family: gabriola;font-size: 25px;text-transform: uppercase;">maracujá </p>
+            </div>
+          </td>
+          <td>
+              <img src="Images/Zero acucar/morango zero açúcar.png">
+              <div class="retangulo">
+                <p style="font-family: gabriola;font-size: 25px;text-transform: uppercase;">morango</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+              <img src="Images/Zero acucar/chocomix com morangos zero açúcar.png">
+              <div class="retangulo">
+                <p style="font-family: gabriola;font-size: 25px;text-transform: uppercase;">chocomix com morangos</p>
+          </div>
+          </td>
+          <td>
+            <img src="Images/Zero acucar/alpes suiços zero açúcar.png">
+            <div class="retangulo">
+              <p style="font-family: gabriola;font-size: 25px;text-transform: uppercase;">alpes suiços </p>
+        </td>
+        <td>
+          <img src="Images/Zero acucar/aerado zero açúcar.png">
+          <div class="retangulo">
+            <p style="font-family: gabriola;font-size: 25px;text-transform: uppercase;">aerado</p>
+      </div>
+      </td>
+    </tr>
+      <tr>
+        <td>
+        <img src="Images/Zero acucar/alpes suiços zero açúcar.png">
+        <div class="retangulo">
+          <p style="font-family: gabriola;font-size: 25px;text-transform: uppercase;">alpes suiços </p>
+    </td>
+    <td>
+      <img src="Images/Zero acucar/abacaxi com coco zero açúcar.png">
+      <div class="retangulo">
+        <p style="font-family: gabriola;font-size: 25px;text-transform: uppercase;">abacaxi com coco </p>
+  </td>
+      </tr>
+     </table>
+    </div>
+</div>
+</div>
+
+<div id="myDropdown3" class="dropdown-content">
+  <div id="areaMaisVendidos">
+      <table>
+          <tr>
+              <td>
+                  <img src="Images/Brancos/abacaxi com ameixa.png">
+                  <div class="retangulo">
+                    <p style="font-family: gabriola;font-size: 25px;text-transform: uppercase;">abacaxi com ameixa</p>
+                </div>
+              </td>
+              <td>
+                <img src="Images/Brancos/abacaxi com coco.png">
+                <div class="retangulo">
+                  <p style="font-family: gabriola;font-size: 25px;text-transform: uppercase;">abacaxi com coco</p>
+            </div>
+            </td>
+            <td>
+                <img src="Images/Brancos/abacaxi.png">
+                <div class="retangulo">
+                  <p style="font-family: gabriola;font-size: 25px;text-transform: uppercase;">abacaxi</p>
+            </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+                <img src="Images/Brancos/alaska.png">
+                <div class="retangulo">
+                  <p style="font-family: gabriola;font-size: 25px;text-transform: uppercase;">alaska</p>
+            </div>
+            </td>
+            <td>
+              <img src="Images/Brancos/alpes suiços com morango.png">
+              <div class="retangulo">
+                <p style="font-family: gabriola;font-size: 25px;text-transform: uppercase;">alpes suiços com morango</p>
+            </div>
+          </td>
+          <td>
+              <img src="Images/Brancos/ameixa.png">
+              <div class="retangulo">
+                <p style="font-family: gabriola;font-size: 25px;text-transform: uppercase;">ameixa</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+              <img src="Images/Brancos/baba de moça com doce de leite.png">
+              <div class="retangulo">
+                <p style="font-family: gabriola;font-size: 25px;text-transform: uppercase;">baba de moça com doce de leite</p>
+          </div>
+          </td>
+        <td>
+          <img src="Images/Brancos/baba de moça com nozes.png">
+          <div class="retangulo">
+            <p style="font-family: gabriola;font-size: 25px;text-transform: uppercase;">baba de moça com nozes</p>
+      </div>
+      </td>
+        <td>
+        <img src="Images/Brancos/baba de moça.png">
+        <div class="retangulo">
+          <p style="font-family: gabriola;font-size: 25px;text-transform: uppercase;">baba de moça</p>
+    </td>
+        </tr>
+        <tr>
+    <td>
+      <img src="Images/Brancos/beijinho.png">
+      <div class="retangulo">
+        <p style="font-family: gabriola;font-size: 25px;text-transform: uppercase;">beijinho</p>
+  </td>
+  <td>
+    <img src="Images/Brancos/bolo da vovó.png">
+    <div class="retangulo">
+      <p style="font-family: gabriola;font-size: 25px;text-transform: uppercase;">bolo da vovó</p>
+</div>
+</td>
+<td>
+  <img src="Images/Brancos/gelado de abacaxi.png">
+  <div class="retangulo">
+    <p style="font-family: gabriola;font-size: 25px;text-transform: uppercase;">gelado de abacaxi</p>
+</td>
+<td>
+      </tr>
+     </table>
+    </div>
+</div>
+</div>
+
+<div id="myDropdown4" class="dropdown-content">
+  <div id="areaMaisVendidos">
+      <table>
+          <tr>
+              <td>
+                  <img src="Images/Chocolate/alpes suíços.png">
+                  <div class="retangulo">
+                    <p style="font-family: gabriola;font-size: 25px;text-transform: uppercase;">alpes suíços</p>
+                </div>
+              </td>
+              <td>
+                <img src="Images/Chocolate/avelã.png">
+                <div class="retangulo">
+                  <p style="font-family: gabriola;font-size: 25px;text-transform: uppercase;">avelã</p>
+            </div>
+            </td>
+            <td>
+                <img src="Images/Chocolate/Bolo a francesa.png">
+                <div class="retangulo">
+                  <p style="font-family: gabriola;font-size: 25px;text-transform: uppercase;">Bolo a francesa</p>
+            </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+                <img src="Images/Chocolate/bolo aerado.png">
+                <div class="retangulo">
+                  <p style="font-family: gabriola;font-size: 25px;text-transform: uppercase;">bolo aerado</p>
+            </div>
+            </td>
+            <td>
+              <img src="Images/Chocolate/brigadeiro com baba de moça.png">
+              <div class="retangulo">
+                <p style="font-family: gabriola;font-size: 25px;text-transform: uppercase;">brigadeiro com baba de moça</p>
+            </div>
+          </td>
+          <td>
+              <img src="Images/Chocolate/brigadeiro II.png">
+              <div class="retangulo">
+                <p style="font-family: gabriola;font-size: 25px;text-transform: uppercase;">brigadeiro II</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+              <img src="Images/Chocolate/brigadeiro tradicional.png">
+              <div class="retangulo">
+                <p style="font-family: gabriola;font-size: 25px;text-transform: uppercase;">brigadeiro tradicional</p>
+          </div>
+          </td>
+        <td>
+          <img src="Images/Chocolate/chifon.png">
+          <div class="retangulo">
+            <p style="font-family: gabriola;font-size: 25px;text-transform: uppercase;">chifon</p>
+      </div>
+      </td>
+        <td>
+        <img src="Images/Chocolate/chocolate com amendoim.png">
+        <div class="retangulo">
+          <p style="font-family: gabriola;font-size: 25px;text-transform: uppercase;">chocolate com amendoim</p>
+    </td>
+        </tr>
+        <tr>
+    <td>
+      <img src="Images/Chocolate/chocolate com crocante.png">
+      <div class="retangulo">
+        <p style="font-family: gabriola;font-size: 25px;text-transform: uppercase;">chocolate com crocante</p>
+  </td>
+  <td>
+    <img src="Images/Chocolate/chocolate com maracuja.png">
+    <div class="retangulo">
+      <p style="font-family: gabriola;font-size: 25px;text-transform: uppercase;">chocolate com maracuja</p>
+</div>
+</td>
+<td>
+  <img src="Images/Chocolate/chocomix.png">
+  <div class="retangulo">
+    <p style="font-family: gabriola;font-size: 25px;text-transform: uppercase;">chocomix</p>
+</td>
+<td>
+      </tr>
+     </table>
+    </div>
+</div>
+</div>
+</div>
+</div>
+  <script>
+  /* When the user clicks on the button, 
+  toggle between hiding and showing the dropdown content */
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  /* When the user clicks on the button, 
+  toggle between hiding and showing the dropdown content */
+  function myFunction2() {
+    document.getElementById("myDropdown2").classList.toggle("show");
+  }
+  /* When the user clicks on the button, 
+  toggle between hiding and showing the dropdown content */
+  function myFunction3() {
+    document.getElementById("myDropdown3").classList.toggle("show");
+  }
+  /* When the user clicks on the button, 
+  toggle between hiding and showing the dropdown content */
+  function myFunction4() {
+    document.getElementById("myDropdown4").classList.toggle("show");
+  }
+  
+  
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+  </script>
+
+<div id="video_principal">
+
+  <div class="enunciado">
+      <img src="Images/coracao2.png">
+      
+      <i class="fa fa-long-arrow-right"></i>
+      
+  </div>
+  
+  <div class="enunciado2">
+    <div class="show">
+          <a class="popup-youtube" href="https://www.youtube.com/watch?v=OCbvDv2NSy0" target="_blank">
+            <div class="seta"></div>
+              <img src="http://sodiedoces.com.br/img/Institucional2Wesley.jpg">
+              <div class="play hvr-grow"></div>
+          </a>
+      </div>
+  </div>
+  <div id="sodieTV">
+    <a href="https://www.youtube.com/channel/UCMWRNWsAeqx7frXY6Otgq1w"><img src="Images/sodie-tv-novo1.png"></a>
+   </div>
+   <div id="comunication">
+    <a href="ouvidoria@sodiedoces.com.br"><img src="Images/127.png"></a>
+   </div>
+</div>
+
+<div class="clear"></div>
+</div>
+
+
+<div id="redesSociais">
+  <a href="https://www.facebook.com/sodiedocesoficial"><img src="Images/redes.png"></a>
+</div>
+<div style="width: 50px;height: 50px;left: 50%;margin-left: -500px;position: relative;">
+  <img src="Images/selo_abf_2019.png">
+</div>
+<div style="width: 300px;height: 100px;left: 50%;margin-left: -420px;margin-top:-60px;position: relative;">
+<p>Iniciativa da ABF para incentivar as boas práticas do franchising.</p>
+</div>
+<div style="width: 50px;height: 50px;left: 50%;margin-left: 400px;margin-top:-100px;position: relative;">
+<img src="Images/selo_nestle.png">
+</div>
+</body>
+</html>
